@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <script>
+        //webbläsaren läser javascript uppifrån och ner
+        // alert('Martin')
+        // alert('Lindahl')
+
+        console.log("används för felsökning och under utveckling");
+
+        console.log("Hello from JavaScript!");
+        console.log("Let's do some math");
+        console.log(4 + 7);
+        console.log(12 / 0);
+        console.log("Goodbye!");
+
+        //nummer 5 plus nummer 5
+        console.log(5+5);
+        //allt inom " " kallas för string och räknas inte ut av javascript
+        console.log("5 + 5");
+
+        //Man kan stoppa in flera saker i samma console.log() med , mellan.
+        console.log("5 + 5", 7 +7)
+
+
+        //variabler
+
+        // deklarera en tom variabel
+        let nästanVadsomhelt
+        console.log('nästanVadsomhelt', nästanVadsomhelt)
+
+        // ge variabeln ett värde
+        nästanVadsomhelt = 14
+        console.log('nästanVadsomhelt igen', nästanVadsomhelt)
+        console.log('nästanVadsomhelt plus nästanVadsomhelt', nästanVadsomhelt + nästanVadsomhelt)
+
+        // Ändra variabelns värde
+        nästanVadsomhelt = 24
+        console.log('nästanVadsomhelt igen', nästanVadsomhelt)
+        console.log('nästanVadsomhelt plus nästanVadsomhelt', nästanVadsomhelt + nästanVadsomhelt)
+
+        // det är möjligt att deklarera en variabel och ge den ett värde på samma rad
+        let pi = 3.14
+
+        console.log('pi gånger 2:', pi * 2)
+
+        // Det går inte attdeklarera en variabel med samma namn två gånger:
+        //let pi = 3.14
+
+        const PI = 3.14 // javascript skiljer på stora och små bokstäver
+
+        PI = 15 // kommer att generera et fel eftersom PI är en const
+
+
+        //villkor
+
+        if(true) {
+            console.log('om värdet inom parantesen är sant körs den här koden')
+        }
+
+        if(false) {
+            console.log('om värdet inom parantesen är falskt körs den här koden inte')
+        }
+
+        let firstName = 'Martin'
+
+        if(firstName === 'Martin') {
+            console.log('koden körs om variabeln firstName är lika med strängen Martin')
+        }
+
+        firstName = 'Tommy'
+        //eftersom firstame === 'Martin' är false så körs inte console.log() nedan
+        if(firstName === 'Martin') {
+            console.log('koden körs om variabeln firstName är lika med strängen Martin')
+        }
+    </script>
+    
+</body>
+</html>
